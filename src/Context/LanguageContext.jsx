@@ -1,10 +1,11 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import i18n from '../Services/i18n';
 
 const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-  const { i18n } = useTranslation();
+  const {i18n} = useTranslation();
   const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
 
   const languages = [

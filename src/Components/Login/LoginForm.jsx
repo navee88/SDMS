@@ -510,7 +510,7 @@ showDialog(msg, "warning");
       <form onSubmit={handleSubmit(onSubmit)}>
       
         <div className="mb-3">
-          <label className="text-sm font-medium text-gray-600">{t("login.username")}</label>
+          <label className="text-sm font-medium text-gray-600">User:</label>
           <input
             ref={usernameRef}
             type="text"
