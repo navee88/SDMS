@@ -6,5 +6,6 @@ export const api = axios.create({
   timeout: 60000
 });
 
+
 export const SECRET_KEY = "AGARAM_SDMS_SCRT";
 export const ITERATIONS = 100;
